@@ -1,0 +1,340 @@
+<html>
+<head>
+<title>scapic</title>
+<link href="Scapic.css" rel="stylesheet">
+<style>
+html {
+  box-sizing: border-box;
+}
+body{
+margin-top:0px;
+margin-left:70px;
+margin-right:70px;
+margin-bottom:0px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container1 {
+  padding: 0 16px;
+}
+
+.container1::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button1 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button1:hover {
+  background-color: #555;
+}
+
+.container img{
+border-radius: 50%;
+}
+.container{
+  width:500px;
+  min-height:315px;
+  margin:0 auto;
+  position:relative;
+  padding-bottom:30px;
+  overflow:hidden;
+}
+h1{
+  text-align:center;
+  text-shadow:0 1px white;
+
+}
+h2{
+
+  margin:15px 0 5px;
+  text-shadow:0 1px rgba(255,255,255,0.5);
+}
+h6{
+ 
+  margin:0;
+}
+input[type="radio"] {
+position: absolute;
+width: 1px; 
+height: 1px;
+padding: 0;
+margin: -1px;
+border: 0;
+clip: circle(0 0 25);
+overflow: hidden;
+}
+label{
+  display:block;
+  width:32%;
+  border: 4px solid white;
+  position:absolute;
+  bottom:5px;
+  cursor: pointer;
+  transition: border-color 0.3s linear;
+}
+
+label.second{
+  left:34%;
+}
+label.third{
+  left:68%;
+}
+
+
+
+
+
+
+img{
+  float:left;
+  margin-right: 20px;
+}
+.slide{
+  position:absolute;
+  left:-100%;
+  opacity:0;
+  transition: all 0.6s ease-in;
+}
+
+#first:checked ~ label.first {
+  border-width:6px;
+  border-color:#DB532B;
+}
+#second:checked ~ label.second {
+  border-width:6px; border-color:purple;
+}
+#third:checked ~ label.third {
+  border:6px solid #54885F;
+}
+
+#first:checked ~ div.one {
+  left:0;
+  opacity:1;
+}
+#second:checked ~ div.two {
+  left:0;
+  opacity:1;
+}
+#third:checked ~ div.three {
+  left:0;
+  opacity:1;
+}
+
+</style>
+</head>
+<!--s1-->
+<section id="welcome">
+ <div class="container">
+                    <div class="row">
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="single_item">
+                                <div class="item_list">
+                                    <div class="welcome_icon">
+                                        <i class="fa fa-refresh"></i>
+                                    </div>
+                                    <h4>Learn a Skill</h4>
+                                </div>
+                            </div>
+                        </div>
+</div>
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="single_item">
+                                <div class="item_list">
+                                    <div class="welcome_icon">
+                                      <i class="fa fa-mortar-board"></i>
+                                    </div>
+                                    <h4>Build profile</h4>
+                                </div>
+                            </div>
+                        </div>
+	     </div>
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="single_item">
+                                <div class="item_list">
+                                    <div class="welcome_icon">
+                                        <i class="fa fa-book"></i>
+		</div>						                  </div>
+                                    <h4>Get Hired</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--s1-->
+<body>
+<center><button class="button">Get Started</button></center>
+<br>
+    <div class="section-title">
+      <center><h2>About Us</h2></center>
+	 </div>
+	 
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="m1.jpg" alt="Jane" style="width:100%">
+      <div class="container1">
+        <p>The intro to ML Classification Models course is meant for developers or data scientists (or anybody else) who knows basic Python programming and wishes to learn about Machine Learning,with a focus on solving the problem of classification.</p>
+      <h1>Rs. 1500</h1>
+	  </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="m1.jpg" alt="Mike" style="width:100%">
+      <div class="container1">
+        <p>The intro to ML Classification Models course is meant for developers or data scientists (or anybody else) who knows basic Python programming and wishes to learn about Machine Learning,with a focus on solving the problem of classification.</p>
+      <h1>Rs. 1500</h1>
+	  </div>
+    </div>
+  </div>
+   <div class="column">
+    <div class="card">
+      <img src="m1.jpg" alt="Mike" style="width:100%">
+      <div class="container1">
+        <p>The intro to ML Classification Models course is meant for developers or data scientists (or anybody else) who knows basic Python programming and wishes to learn about Machine Learning,with a focus on solving the problem of classification.</p>
+      <h1>Rs. 1500</h1>
+	  </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="m1.jpg" alt="Mike" style="width:100%">
+      <div class="container1">
+        <p>The intro to ML Classification Models course is meant for developers or data scientists (or anybody else) who knows basic Python programming and wishes to learn about Machine Learning,with a focus on solving the problem of classification.</p>
+     <h1>Rs. 1500</h1>
+	 </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="m1.jpg" alt="Mike" style="width:100%">
+      <div class="container1">
+        <p>The intro to ML Classification Models course is meant for developers or data scientists (or anybody else) who knows basic Python programming and wishes to learn about Machine Learning,with a focus on solving the problem of classification.</p>
+      <h1>Rs. 1500</h1>
+	  </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="m1.jpg" alt="Mike" style="width:100%">
+      <div class="container1">
+        <p>The intro to ML Classification Models course is meant for developers or data scientists (or anybody else) who knows basic Python programming and wishes to learn about Machine Learning,with a focus on solving the problem of classification.</p>
+      <h1>Rs. 1500</h1>
+	  </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="m1.jpg" alt="Mike" style="width:100%">
+      <div class="container1">
+        <p>The intro to ML Classification Models course is meant for developers or data scientists (or anybody else) who knows basic Python programming and wishes to learn about Machine Learning,with a focus on solving the problem of classification.</p>
+      <h1>Rs. 1500</h1>
+	  </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="m1.jpg" alt="Mike" style="width:100%">
+      <div class="container1">
+        <p>The intro to ML Classification Models course is meant for developers or data scientists (or anybody else) who knows basic Python programming and wishes to learn about Machine Learning,with a focus on solving the problem of classification.</p>
+      <h1>Rs. 1500</h1>
+	  </div>
+    </div>
+  </div>  
+                                                 
+  <div class="column">
+    <div class="card">
+      <img src="m1.jpg" alt="John" style="width:100%">
+      <div class="container1">
+        <p>The intro to ML Classification Models course is meant for developers or data scientists (or anybody else) who knows basic Python programming and wishes to learn about Machine Learning,with a focus on solving the problem of classification.</p>
+     <h1>Rs. 1500</h1>     
+	 </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<center><h2>Testimonials</h2></center>
+<br>
+<body>
+<h1> CSS3 Testimonials Slider</h1>
+<div class="container">
+  <input type="radio" name="nav" id="first" checked/>
+  <input type="radio" name="nav" id="second" />
+  <input type="radio" name="nav" id="third" />
+  
+  <label for="first" class="first"></label>
+<label for="second"  class="second"></label>
+<label for="third" class="third"></label>
+ 
+  <div class="one slide">
+    
+    <img src="m1.jpg" width="170" height="130" />
+   <p>It helps me a lot to think very creative to obtain an answer.I got an offer from Symantec and I am really very happy to be the with his creative design and will definitely be hiring him again. </p></div>
+  
+  <div class="two slide">
+    
+    <img src="m1.jpg" width="170" height="130" />
+    <p>It helps me a lot to think very creative to obtain an answer.I got an offer from Symantec and I am really very happy to be the with his creative design and will definitely be hiring him again. </p>
+    
+  </div>
+  
+  <div class="three slide">
+    
+    <img src="m1.jpg" width="170" height="130" />
+    <p>It helps me a lot to think very creative to obtain an answer.I got an offer from Symantec and I am really very happy to be the with his creative design and will definitely be hiring him again. </p>
+<br>
+
+  </div>
+ </div>
+<br>
+<div>
+<pre>About us	Contact Us	Career	Team	Jobs	T&C</pre>
+<br>
+</div>
+</body>
+</html>
